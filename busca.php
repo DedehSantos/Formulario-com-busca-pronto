@@ -19,8 +19,9 @@ echo '<br>';
 echo 'Celular: ' .  $celular = $linha['celular'];
 echo '<br>';
  echo 'Email: ' .  $email = $linha['email'];
+ echo '<br>';
 }
 
-
+echo 'Quantidade:' . $conta;
 
 ?>
