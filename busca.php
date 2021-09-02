@@ -7,7 +7,8 @@ $sql = "SELECT * FROM tbcliente WHERE nome LIKE '%$busca%'";
 $result = mysqli_query($conn, $sql);
 $conta = mysqli_num_rows($result);
 while( $linha = mysqli_fetch_array($result)){
-
+echo 'ID: <a href="delete.php?id='.$linha['id'].'" title="Delete">'
+.$linha['id']. '</a>';
 echo 'Nome: ' . $nome = $linha['nome'];
 echo '<br>';
 echo 'Endereço: ' .  $endereco = $linha['endereco'];
@@ -19,6 +20,8 @@ echo '<br>';
 echo 'Celular: ' .  $celular = $linha['celular'];
 echo '<br>';
  echo 'Email: ' .  $email = $linha['email'];
+ echo '<br>';
+ echo '<br>';
  echo '<br>';
 }
 
