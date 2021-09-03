@@ -1,5 +1,6 @@
 <?php include_once "config.php";?>
 
+
 <?php 
   
   $id = $_GET['id'];
