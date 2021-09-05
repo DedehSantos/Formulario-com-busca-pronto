@@ -11,7 +11,9 @@ $celular = $_POST['celular'];
 $email = $_POST['email'];
 $conn = mysqli_connect($servidor, $dbusuario, $dbsenha, $dbname);
  mysqli_set_charset($conn,"utf8");
- $sql = "INSERT INTO tbcliente(nome, endereco, estado,telefone, celular, email) VALUES ('$nome', '$endereco', '$estado', '$telefone', '$celular', '$email' )";
+ $sql = "INSERT INTO tbcliente
+ (nome, endereco, estado,telefone, celular, email) VALUES ('$nome', 
+ '$endereco', '$estado', '$telefone', '$celular', '$email' )";
 
  if(mysqli_query($conn, $sql)){
      header("location: index.php");
