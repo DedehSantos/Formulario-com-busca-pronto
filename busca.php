@@ -20,7 +20,7 @@ while( $linha = mysqli_fetch_array($result)){
 echo 'ID: <a href="delete.php?id='.$linha['id'].'" title="Delete" 
  onclick="return deleta_cliente();">'.$linha['id']. '</a>';
  echo '<br>';
-echo 'Nome: ' . $nome = $linha['nome'];
+echo 'Nome: <a href="editar.php?id='.$linha['id'].'" ">'.$linha['nome']. '</a>';
 echo '<br>';
 echo 'Endereço: ' .  $endereco = $linha['endereco'];
 echo '<br>';

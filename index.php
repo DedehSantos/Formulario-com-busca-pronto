@@ -10,6 +10,7 @@
 <body>
 
     <!--/Busca-->
+   
  
 <div class="container-fluid">
     <label>Pesquisa</label>
@@ -26,7 +27,7 @@
    <div class="container-fluid">
      <h2>Formulário</h2>
      <form method="POST" action="enviar.php">
-     <input type="text" hidden="true" name="id" value="<?php echo $id; ?>">
+     
          <div class="form-group col-md-6">
             <label for="">Nome : </label>
             <input class="form-control" type="text" name="nome" value="" placeholder="Digite seu Nome">
